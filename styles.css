@@ -1,1 +1,117 @@
-"styles.css" 
+body {
+    font-size: 28px;
+    background-color: whitesmoke;
+    height: 10000px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .shadow {
+    box-shadow: 0 0 50px 5px #999;
+    -moz-box-shadow: 0 0 50px 5px #999;
+    -webkit-box-shadow: 0 0 50px 5px #999;
+  }
+  
+  .container {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 0px;
+  }
+  
+  li {
+    float: left;
+  }
+
+  li img {
+    vertical-align: middle;
+    height: 68px;
+    width: 68px;
+  }
+  
+  li a {
+    display: block;
+    color: #111;
+    font-weight: 600;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: whitesmoke;
+  }
+  section {
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .first {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .title {
+    position: absolute;
+    bottom: 50%;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .hillcontainer {
+    display: block;
+  }
+  .hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    margin-top: 0px;
+    margin: 0 auto;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .second {
+    overflow: hidden;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .underhillcontainer > svg {
+    display: block;
+  }
+  .under-hills {
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    top: 0%;
+    left: 0%;
+    margin-top: 0px;
+    vertical-align: top;
+    width: 100%;
+    z-index: -1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }

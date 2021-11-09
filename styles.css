@@ -1,46 +1,53 @@
 body {
     font-size: 28px;
     background-color: whitesmoke;
-    height: 10000px;
+    height: 1000px;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
-  }
-
-  .shadow {
-    box-shadow: 0 0 50px 5px #999;
-    -moz-box-shadow: 0 0 50px 5px #999;
-    -webkit-box-shadow: 0 0 50px 5px #999;
-  }
-  
-  .container {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    white-space: nowrap;
   }
   h1 {
     margin: 0;
+    font-weight: 700;
   }
-  ul {
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+  }
+  h3{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+  }
+  #nav-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  #nav-wrapper ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: white;
     margin-bottom: 0px;
+    z-index: 5;
+    top: 0;
   }
   
-  li {
+  #nav-wrapper li {
     float: left;
   }
 
-  li img {
+  #nav-wrapper li img {
     vertical-align: middle;
     height: 68px;
     width: 68px;
   }
   
-  li a {
+  #nav-wrapper li a {
     display: block;
     color: #111;
     font-weight: 600;
@@ -48,32 +55,37 @@ body {
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color: whitesmoke;
+  #nav-wrapper li a:hover {
+    background-color: #d3d3d3;
   }
   section {
     height: 100vh;
-    margin: 0 auto;
-    padding: 0px;
+    position: relative;
   }
   .first {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
-  .title {
+  .text {
     position: absolute;
-    bottom: 50%;
-    margin: 0px;
-    padding: 0px;
+    bottom: 60%;
+    text-align: center;
     z-index: -1;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    font-weight: 700;
+    line-height: 2.5cm;
+  }
+  .text h3 {
+    font-weight: 600;
+    margin-right: -50%;
+    position: absolute;
+    margin-right: -50%;
+    padding-top: 9vh;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
   .hillcontainer {
     display: block;
@@ -82,36 +94,203 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: auto;
     z-index: -1;
-    margin-top: 0px;
-    margin: 0 auto;
-    padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
   .second {
     overflow: hidden;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
-  .underhillcontainer > svg {
+  .underhillcontainer{
     display: block;
   }
   .under-hills {
     position: relative;
-    margin: 0 auto;
-    padding: 0px;
     top: 0%;
     left: 0%;
     margin-top: 0px;
     vertical-align: top;
     width: 100%;
     z-index: -1;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
+  .second .title {
+    text-align: center;
+    font-weight: 700;
+  }
+  .aims {
+    list-style-image: url("./assests/sprout.png");
+  }
+  .attribution a{
+    font-size: 1vh;
+    text-decoration: none;
+  }
+  .attribution{
+    font-size: 1vh;
+  }
+  .third {
+    background-image: url("./assests/third-bkg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ /* News Slider */
+ .carousel {
+   position: relative;
+   padding-top: 20vh;
+ }
+ .carousel-title {
+   text-align: center;
+   margin: 30px auto;
+ }
+ .carousel .next {
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   font-size: 2em;
+   color: #4d4d4d;
+   cursor: pointer;
+ }
+ .carousel .prev {
+   position: absolute;
+   top: 50%;
+   left: 30px;
+   font-size: 2em;
+   color: #4d4d4d;
+   cursor: pointer;
+ }
+ .carousel .prev:hover {
+   color: #458e45ff;
+ }
+ .carousel .next:hover {
+   color: #458e45ff;
+ }
+ .post-wrapper {
+   width: 84%;
+   height: 500px;
+   margin: 0 auto;
+   padding: 10px 0px 10px 0px;
+   overflow: hidden;
+ }
+ .post-wrapper .post {
+   display: inline-block;
+   height: 450px;
+   width: 300px;
+   margin: 0px 10px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 1rem 1rem 1rem -1rem #a0a0a0;
+   -webkit-box-shadow: 1rem 1rem 1rem -1rem #a0a0a0;
+ }
+ .post .post-image {
+   width: 100%;
+   height: 200px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   object-fit: cover;
+ }
+ .post .post-info {
+   height: 200px;
+   padding: 0px 5px;
+ }
+ .post .post-info a {
+   margin: 5px;
+   text-decoration: none;
+   color: inherit;
+   font-weight: 600;
+ }
+ .post:hover {
+   opacity: 0.7;
+   cursor: pointer;
+ }
+ .post-info h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  display: inline;
+ }
+ /* End of Carousel */
+
+ .meet-the-team {
+   text-align: center;
+ }
+
+ .team {
+   position: relative;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 40px 0;
+ }
+
+ .team .member {
+   position: relative;
+   width: 300px;
+   height: 400px;
+   background: whitesmoke;
+   margin: 20px;
+   box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(10px);
+ }
+
+ .team .member .content {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity: 0.5;
+   transition: 0.5s;
+ }
+
+ .team .member:hover .content {
+   opacity: 1;
+   cursor: pointer;
+ }
+
+ .team .member .content .imgBx {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 10px solid rgba(0, 0, 0, 0.25)
+ }
+
+ .team .member .content .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .team .member .content .contentBx h3 {
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.5em;
+ }
+
+ .team .member .content .contentBx h3 span {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.contact-us {
+  text-align: center;
+  margin: 3rem;
+}
+
+.fourth .center {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}

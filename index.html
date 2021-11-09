@@ -3,32 +3,152 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Quakers Walk Biodiversity</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assests/icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assests/icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assests/icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assests/icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assests/icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assests/icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assests/icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assests/icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assests/icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assests/icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assests/icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assests/icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assests/icon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assests/icon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assests/icon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assests/icon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assests/icon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assests/icon/mstile-310x310.png" />
+    <script src="https://kit.fontawesome.com/67ee38a992.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div class="container">
+    <div id="nav-wrapper">
         <ul class="navbar">
-            <li><img src="./assests/icon.svg"></li>
+        <li><img src="./assests/icon.svg"></li>
           <li><a class="active" href="#home">home</a></li>
+          <li class="about"><a href="#about">about us</a></li>
           <li><a href="#news">news</a></li>
           <li><a href="#contact">contact</a></li>
-        </ul>
-    </div>
-    <section class="first">
-        <h1 class="title">Quakers Walk Biodiversity</h1>
+        </ul></div>
+    <section class="first" id="home">
+        <div class="text">
+        <h1>Quakers Walk Community Biodiversity Group</h1>
+        <h3>Supporting biodiversity in the Quakers Walk area of Devizes</h3>
+        </div>
         <div class="hillcontainer"><img class="hills" src="./assests/hills.svg" /></div>
     </section>
-    <section class="second">
+    <section class="second" id="about">
         <div class="underhillcontainer"><img class="under-hills" src="./assests/under-hills.svg" /></div>
+        <h1 class="meet-the-team">Meet the team</h1>
+        <div class="team">
+            <div class="member">
+                <div class="content">
+                    <div class="imgBx"><img src="./blog images/IMG_20210606_091235.jpg"></div>
+                    <div class="contentBx">
+                        <h3>Ian <br><span>Chairman</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="content">
+                    <div class="imgBx"><img src="./blog images/IMG_20210622_132136.jpg"></div>
+                    <div class="contentBx">
+                        <h3>Anabelle <br><span>Treasurer</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="content">
+                    <div class="imgBx"><img src="./blog images/IMG_20210715_190906.jpg"></div>
+                    <div class="contentBx">
+                        <h3>Cyril <br><span>Committee Member</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="member">
+                <div class="content">
+                    <div class="imgBx"><img src="./blog images/IMG_20210816_085815.jpg"></div>
+                    <div class="contentBx">
+                        <h3>Thelma <br><span>Secretary</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="3">
+    <section class="third" id="news">
+        <div class="carousel">
+            <h1 class="carousel-title">News</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="post-wrapper">
+                <div class="post" onclick="window.location.href = 'first-site.html';">
+                    <img src="./blog images/IMG_20210606_091235.jpg" alt="the first field we planted" class="post-image">
+                    <div class="post-info">
+                        <h4><a>Our first field</a></h4>
+                        <i class="fas fa-user"><h5> Our Team</h5></i>
+                        &nbsp;
+                        <i class="fas fa-calendar"><h5> Jun 6, 2021</h5></i>
+                    </div>
+                </div>
+                <div class="post" onclick="window.location.href = 'wild-orchid.html';">
+                    <img src="./blog images/IMG_20210622_132136.jpg" alt="wild orchid" class="post-image">
+                    <div class="post-info">
+                        <h4><a>Spotting something rare!</a></h4>
+                        <i class="fas fa-user"><h5> Ian</h5></i>
+                        &nbsp;
+                        <i class="fas fa-calendar"><h5> Jun 22, 2021</h5></i>
+                    </div>
+                </div>
+                <div class="post" onclick="window.location.href = 'butterfly-nettles.html';">
+                    <img src="./blog images/IMG_20210715_190906.jpg" alt="butterfly on nettles" class="post-image">
+                    <div class="post-info">
+                        <h4><a>Welcoming some guests</a></h4>
+                        <i class="fas fa-user"><h5> Anabelle</h5></i>
+                        &nbsp;
+                        <i class="fas fa-calendar"><h5> Jul 15, 2021</h5></i>
+                    </div>
+                </div>
+                <div class="post" onclick="window.location.href = 'border.html';">
+                    <img src="./blog images/IMG_20210816_085942.jpg" alt="a planted border" class="post-image">
+                    <div class="post-info">
+                        <h4><a>Adding a border</a></h4>
+                        <i class="fas fa-user"><h5> Cyril</h5></i>
+                        &nbsp;
+                        <i class="fas fa-calendar"><h5> Aug 16, 2021</h5></i>
+                    </div>
+                </div>
+                <div class="post" onclick="window.location.href = 'second-site.html';">
+                    <img src="./blog images/IMG_20210816_085815.jpg" alt="Finished our second site" class="post-image">
+                    <div class="post-info">
+                        <h4><a>Finished our second site!</a></h4>
+                        <i class="fas fa-user"><h5> Our Team</h5></i>
+                        &nbsp;
+                        <i class="fas fa-calendar"><h5> Aug 17, 2021</h5></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="fourth" id="contact">
+        <img src="./assests/center-decoration.svg" alt="" class="center">
+        <h1 class="contact-us">Contact Us:</h1>
+    </section>
+    <!-- https://www.facebook.com/groups/qwcbg/ -->
         
-    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrolls.js@1.0.18/scrolls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./app.js" type="module"></script>
     </body>
 </html>

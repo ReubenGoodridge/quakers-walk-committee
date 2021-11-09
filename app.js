@@ -7,8 +7,6 @@ $('.post-wrapper').slick({
   prevArrow: $('.prev'),
 })
 
-$('.member-wrapper').slick()
-
 
 jQuery($ => {
   // The speed of the scroll in milliseconds
